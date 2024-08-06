@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>TestNG:  Extend_API_Automation</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Extend_API_Automation</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 06 22:36:59 EEST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3266 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ReqRes.API.Automation.E04_Put_updateUser.valid_Put_updateUserInfo()'><b>valid_Put_updateUserInfo</b><br>Test class: com.ReqRes.API.Automation.E04_Put_updateUser<br/>
+<a href="#Output-602161799" onClick='toggleBox("Output-602161799", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-602161799" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-602161799">
+
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 1' test cases in the current suite                                        
+                              Test Method: 'com.ReqRes.API.Automation.E04_Put_updateUser.valid_Put_updateUserInfo'                              
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m<br/>
+[ReportManager] Response status code: "200", status line: "HTTP/1.1 200 OK" @06-08-2024 22:37:01.0472 PM<br/>
+[ReportManager] Actual response status code "200" matches the expected one "200". @06-08-2024 22:37:01.0476 PM<br/>
+[ReportManager] Handle response; PUT | Target Status Code: 200 | Response Time: 685ms. @06-08-2024 22:37:02.0162 PM<br/>
+[ReportManager] Assert that the API response Time is less than or equal to "2000". @06-08-2024 22:37:02.0179 PM<br/>
+[ReportManager] Get response time; 685. @06-08-2024 22:37:02.0188 PM<br/>
+[ReportManager] Expected "2000", and actual "685" @06-08-2024 22:37:02.0189 PM<br/>
+[ReportManager] Expected "2000", and actual "685" @06-08-2024 22:37:02.0191 PM<br/>
+[ReportManager] Assert that the API response Body contains "createdAt". @06-08-2024 22:37:02.0196 PM<br/>
+[ReportManager] Expected "createdAt", and actual "{"phoneNumber":"01033333333","last_name":"Kim","first_name":"Kim","email":"test12@gmail.com","updatedAt":"2024-08-06T19:37:02.338Z"}" @06-08-2024 22:37:02.0198 PM<br/>
+[ReportManager] Expected "createdAt", and actual "{"phoneNumber":"01033333333","last_name":"Kim","first_name":"Kim","email":"test12@gmail.com","updatedAt":"2024-08-06T19:37:02.338Z"}" @06-08-2024 22:37:02.0205 PM<br/>
+[ReportManager] The user is updated successfully @06-08-2024 22:37:02.0207 PM<br/>
+[ReportManager] Assert that the API response extracted value from the JSON path "email" is equal to "test12@gmail.com". @06-08-2024 22:37:02.0209 PM<br/>
+[ReportManager] Get response jsonvalue; email. @06-08-2024 22:37:02.0268 PM<br/>
+[ReportManager] Expected "test12@gmail.com", and actual "test12@gmail.com" @06-08-2024 22:37:02.0269 PM<br/>
+[ReportManager] Expected "test12@gmail.com", and actual "test12@gmail.com" @06-08-2024 22:37:02.0279 PM<br/>
+[ReportManager] Check that user profile info has been updated Successfully @06-08-2024 22:37:02.0280 PM<br/>
+[ReportManager] Assert that the API response extracted value from the JSON path "phoneNumber" is equal to "01033333333". @06-08-2024 22:37:02.0282 PM<br/>
+[ReportManager] Get response jsonvalue; phoneNumber. @06-08-2024 22:37:02.0284 PM<br/>
+[ReportManager] Expected "01033333333", and actual "01033333333" @06-08-2024 22:37:02.0285 PM<br/>
+[ReportManager] Expected "01033333333", and actual "01033333333" @06-08-2024 22:37:02.0285 PM<br/>
+[ReportManager] Assert that the API response extracted value from the JSON path "first_name" is equal to "01033333333". @06-08-2024 22:37:02.0287 PM<br/>
+[ReportManager] Get response jsonvalue; first_name. @06-08-2024 22:37:02.0290 PM<br/>
+[ReportManager] Expected "01033333333", and actual "Kim" @06-08-2024 22:37:02.0291 PM<br/>
+[ReportManager] Expected "01033333333", and actual "Kim" @06-08-2024 22:37:02.0291 PM<br/>
+[ReportManager] Assert that the API response extracted value from the JSON path "last_name" is equal to "01033333333". @06-08-2024 22:37:02.0293 PM<br/>
+[ReportManager] Get response jsonvalue; last_name. @06-08-2024 22:37:02.0296 PM<br/>
+[ReportManager] Expected "01033333333", and actual "Kim" @06-08-2024 22:37:02.0298 PM<br/>
+[ReportManager] Expected "01033333333", and actual "Kim" @06-08-2024 22:37:02.0298 PM<br/>
+[ReportManager] Successfully created attachment 'SHAFT Engine Logs - Current Method log: valid_Put_updateUserInfo' @06-08-2024 22:37:02.0306 PM<br/>
+
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                   Finished Execution of Test Method: 'com.ReqRes.API.Automation.E04_Put_updateUser.valid_Put_updateUserInfo'                   
+                                                              Test Status: 'Passed'                                                              
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.ReqRes.API.Automation.E04_Put_updateUser@3e6f3bae</td></tr>
+</table><p>
+</body>
+</html>

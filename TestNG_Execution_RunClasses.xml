@@ -1,0 +1,65 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="TestSuite">
+
+    <test name="CitizenAuth_Login">
+        <classes>
+            <class name="org.example.api.test.Citizen.Auth.E04_citizenAuth_Login" />
+        </classes>
+    </test>
+
+
+    <test name="CitizenProfile_CompleteProfile">
+        <classes>
+            <class name="org.example.api.test.Citizen.Profile.E02_CitizenProfile_CompleteProfile" />
+        </classes>
+    </test>
+
+
+    <test name="CitizenProfile_GetProfile">
+        <classes>
+            <class name="org.example.api.test.Citizen.Profile.E01_CitizenProfile_GetProfile" />
+        </classes>
+    </test>
+
+
+
+<!--    <test name="CitizenProfile_UpdateInfo">-->
+<!--        <classes>-->
+<!--            <class name="org.example.api.test.Citizen.Profile.E04_CitizenProfile_UpdateInfo" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="CitizenProfile_GetProfile">-->
+<!--        <classes>-->
+<!--            <class name="org.example.api.test.Citizen.Profile.E01_CitizenProfile_GetProfile" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="CitizenProfile_UpdatePassword">-->
+<!--        <classes>-->
+<!--            <class name="org.example.api.test.Citizen.Profile.E03_CitizenProfile_UpdatePassword" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+
+    <test name="CitizenAuth_Logout">
+        <classes>
+            <class name="org.example.api.test.Citizen.Auth.E09_citizenAuth_Logout" />
+        </classes>
+    </test>
+
+
+</suite>
+
+
+
+
+
+
+
+

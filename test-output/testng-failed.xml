@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="1" name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Extend_API_Automation(failed)">
+    <classes>
+      <class name="com.ReqRes.API.Automation.E04_Put_updateUser">
+        <methods>
+          <include name="valid_Put_updateUserInfo"/>
+        </methods>
+      </class> <!-- com.ReqRes.API.Automation.E04_Put_updateUser -->
+    </classes>
+  </test> <!-- Extend_API_Automation(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
